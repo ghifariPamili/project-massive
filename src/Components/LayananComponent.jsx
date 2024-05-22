@@ -1,7 +1,7 @@
 
 function LayananComponent() {
   return (
-    <div>LayananComponent</div>
+    <div className="h-screen bg-cyan-400">LayananComponent</div>
   )
 }
 

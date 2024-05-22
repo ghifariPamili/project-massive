@@ -1,7 +1,7 @@
 
 function AboutComponent() {
   return (
-    <div>AboutComponent</div>
+    <div className="h-screen">AboutComponent</div>
   )
 }
 

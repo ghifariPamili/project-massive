@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import HeaderComponent from './HeaderComponent';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const HerosComponent = ({ sections }) => {
   const [currentSection, setCurrentSection] = useState(0);
@@ -13,21 +15,25 @@ const HerosComponent = ({ sections }) => {
   };
 
   return (
-    <div className="hero-section flex flex-col items-center justify-center h-screen">
+    <div className="hero-section relative flex flex-col items-center justify-center h-screen">
       <HeaderComponent />
-      <div className="section-content w-full flex-grow">
-        {sections.map((section, index) => (
-          <div key={index} className={`section ${index === currentSection ? 'block' : 'hidden'} w-full h-full`}>
-            {section.component}
-          </div>
-        ))}
-      </div>
-      <div className="navigation-buttons mt-4 flex justify-between w-full px-4">
-        <button onClick={goToPreviousSection} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Previous
+      <div className="section-content w-full h-full flex items-center justify-center relative">
+        <button 
+          onClick={goToPreviousSection} 
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+          <FontAwesomeIcon icon={faChevronLeft} />
         </button>
-        <button onClick={goToNextSection} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-          Next
+        <div className="w-full h-full">
+          {sections.map((section, index) => (
+            <div key={index} className={`section ${index === currentSection ? 'block' : 'hidden'} w-full h-full`}>
+              {section.component}
+            </div>
+          ))}
+        </div>
+        <button 
+          onClick={goToNextSection} 
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+          <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>
     </div>

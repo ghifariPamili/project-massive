@@ -6,6 +6,7 @@ export default function App() {
     <div>
       <Routes>
         <Route path="" Component={HomePage}/>
+        
       </Routes>
     </div>
   )
