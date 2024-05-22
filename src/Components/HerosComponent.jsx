@@ -20,7 +20,7 @@ const HerosComponent = ({ sections }) => {
       <div className="section-content w-full h-full flex items-center justify-center relative">
         <button 
           onClick={goToPreviousSection} 
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-transparant hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full">
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
         <div className="w-full h-full">
@@ -32,7 +32,7 @@ const HerosComponent = ({ sections }) => {
         </div>
         <button 
           onClick={goToNextSection} 
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-transparant hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full">
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>
