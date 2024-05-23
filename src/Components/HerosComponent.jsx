@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import HeaderComponent from './HeaderComponent';
+// import HeaderComponent from './HeaderComponent';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -15,27 +15,22 @@ const HerosComponent = ({ sections }) => {
   };
 
   return (
-    <div className="hero-section relative flex flex-col items-center justify-center h-screen">
-      <HeaderComponent />
-      <div className="section-content w-full h-full flex items-center justify-center relative">
+    <div className=" flex flex-col items-center justify-center h-screen">
         <button 
           onClick={goToPreviousSection} 
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-transparant hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full">
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-transparent hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full">
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
-        <div className="w-full h-full">
           {sections.map((section, index) => (
             <div key={index} className={`section ${index === currentSection ? 'block' : 'hidden'} w-full h-full`}>
               {section.component}
             </div>
           ))}
-        </div>
         <button 
           onClick={goToNextSection} 
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-transparant hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full">
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-transparent hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full">
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
-      </div>
     </div>
   );
 };
