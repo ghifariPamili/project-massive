@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'; // Import the arrow right icon fr
 
 const Section1 = () => {
   return (
-    <div className="flex bg-teal-200 flex-row items-center justify-between gap-[70px] h-full text-white">
+    <div className="flex bg-teal-200 flex-row items-start justify-between gap-[70px] h-full text-white">
       <div className='rightDiv w-[50%] h-[100%] flex flex-col items-center justify-start'>
         <div className='h-[85%] w-[100%] px-[150px] flex flex-col items-start justify-center gap-[70px]'>
           <div className='flex flex-col gap-[14px]'>
