@@ -18,7 +18,7 @@ const HerosComponent = ({ sections }) => {
     <div className=" flex flex-col items-center justify-center h-screen">
         <button 
           onClick={goToPreviousSection} 
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-transparent hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full">
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-transparent hover:bg-orange-500 text-black font-bold py-2 px-4 rounded-full">
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
           {sections.map((section, index) => (
@@ -28,7 +28,7 @@ const HerosComponent = ({ sections }) => {
           ))}
         <button 
           onClick={goToNextSection} 
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-transparent hover:bg-blue-700 text-black font-bold py-2 px-4 rounded-full">
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-transparent hover:bg-orange-500 text-black font-bold py-2 px-4 rounded-full">
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
     </div>
