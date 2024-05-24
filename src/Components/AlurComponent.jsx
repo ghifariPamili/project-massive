@@ -1,7 +1,7 @@
 
 function AlurComponent() {
   return (
-    <div>AlurComponent</div>
+    <div className='h-screen bg-blue-200'>AlurComponent</div>
   )
 }
 

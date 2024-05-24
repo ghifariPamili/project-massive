@@ -7,16 +7,16 @@ const HeaderComponent = () => {
     <div className="header-nav fixed top-0 left-0 w-full p-4 bg-transparant text-[16px] shadow-md z-50">
       <div className='flex items-center justify-between gap-[70px]'>
         <div className='flex space-x-2'>
-          <button className="px-4 py-2 rounded text-blue-950 font-semibold bg-transparent">
+          <button className="px-4 py-2 rounded text-blue-950 font-semibold hover:text-white bg-transparent">
               Beranda
           </button>
-          <button className="px-4 py-2 rounded text-blue-950 font-semibold bg-transparent">
+          <button className="px-4 py-2 rounded text-blue-950 font-semibold hover:text-white bg-transparent">
               Fitur
           </button>
-          <button className="px-4 py-2 rounded text-blue-950 font-semibold bg-transparent">
+          <button className="px-4 py-2 rounded text-blue-950 font-semibold hover:text-white bg-transparent">
               Alur
           </button>
-          <button className="px-4 py-2 rounded text-blue-950 font-semibold bg-transparent">
+          <button className="px-4 py-2 rounded text-blue-950 font-semibold hover:text-white bg-transparent">
               Layanan
           </button>
         </div>

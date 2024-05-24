@@ -7,6 +7,8 @@ import Section3 from '../Components/Section3';
 import Section4 from '../Components/Section4';
 import LayananComponent from '../Components/LayananComponent';
 import HeaderComponent from '../Components/HeaderComponent';
+import FiturComponent from '../Components/FiturComponent'
+import AlurComponent from '../Components/AlurComponent'
 
 const HomePage = () => {
     const sections = [
@@ -20,6 +22,8 @@ const HomePage = () => {
       <div>
         <HeaderComponent />
         <HerosComponent sections={sections} />
+        <FiturComponent />
+        <AlurComponent />
         <LayananComponent />
         <AboutComponent />
       </div>
