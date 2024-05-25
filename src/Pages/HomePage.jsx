@@ -8,6 +8,8 @@ import LayananComponent from '../Components/LayananComponent';
 import HeaderComponent from '../Components/HeaderComponent';
 import FiturComponent from '../Components/FiturComponent'
 import AlurComponent from '../Components/AlurComponent'
+import FooterComponent from '../Components/FooterComponent';
+
 
 const HomePage = () => {
     const sections = [
@@ -19,11 +21,12 @@ const HomePage = () => {
     return (
       <div>
         <HeaderComponent />
-        <HerosComponent sections={sections} />
-        <FiturComponent />
-        <AlurComponent />
-        <LayananComponent />
-        <AboutComponent />
+        <div id="heros"><HerosComponent sections={sections} /></div>
+        <div id="fitur"><FiturComponent /></div>
+        <div id="alur"><AlurComponent /></div>
+        <div id="layanan"><LayananComponent /></div>
+        <div id="about"><AboutComponent /></div>
+        <FooterComponent />
       </div>
     );
 };
