@@ -7,8 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        customBlue: '48CAE4',
-        customCyan: 'ADE8F4',
+        customBlue: '#48CAE4',
+        customCyan: '#ADE8F4',
+        colorPrimer: '#03045E',
+        colorRating: '#F6931C',
       },
     },
   },

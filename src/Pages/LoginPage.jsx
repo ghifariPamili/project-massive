@@ -1,31 +1,50 @@
 import React from 'react';
-import LogoOnly from '../assets/LogoOnly.png'
+// import '../All.css';
+// import LogoOnly from '../assets/LogoOnly.png'
 
 const LoginPage = () => {
   return (
-    <div className='bg-cyan-100 flex flex-row justify-between items-center h-screen'>
-      {/* Left Section */}
-      <div className=' w-3/5 flex flex-col justify-center items-center p-8'>
-        <h1 className='text-[48px] font-semibold mb-8'>Sign in To Jastip Mama</h1>
-        <div className='mb-4 w-full flex flex-col justify-center items-center'>
-          <input type="text" placeholder="Username" className='w-[430px] p-2 mb-6 border border-gray-300 rounded text-[15px] text-black placeholder:text-black placeholder:font-semibold ' />
-          <input type="password" placeholder="Password" className='w-[430px] p-2 mb-2 border border-gray-300 rounded text-[15px] text-black placeholder:text-black placeholder:font-semibold' />
-        </div>
-        <div className='flex flex-col items-center'>
-          <button className='text-[25px] w-[200px] p-2 mb-1 bg-transparant font-semibold text-gray-500 border-2 border-gray-800 rounded-[20px] '>Sign in</button>
-          <a href="#" className='text-black mb-1'>Forgot your Password?</a>
-          <div className='flex flex-row items-center'>
-            <p>Belum Punya Akun?</p>
-            <a href="#" className='text-black font-bold'>Sign Up</a>
+    <div className='Container text-blue-950 font-semibold flex overflow-hidden font'>
+      <div className='Information h-screen w-[50%] bg-customCyan rounded-tr-[40px] '>
+        <div className='InfoContainer size-[100%] flex flex-col items-start justify-center px-[90px] gap-[80px] '>
+          <div>
+            <h1 className='text-[40px] font-bold'>Selamat datang<br/> di komunitas kami</h1>
+            <p>Ingat Mahasiswa, Ingat JasTip MaMa.</p>
+          </div>
+          <div className='Review flex flex-col gap-[30px]'>
+            <div className='IsiReview'>
+            <div className='StarRating '>
+                <span className='text-colorRating text-[22px] ' >&#9733;&#9733;&#9733;&#9733;&#9733;</span> 
+            </div>
+            <p>"Coba ini, bro/sis! Nih, website baru ini bakal bikin hidupmu makin asyik! Bukan cuma nambahin keren-kerenan layanan kita, tapi juga nyelesin masalah-masalah yang sering nyebelin pas lagi titip-titipan antar mahasiswa. Yuk, langsung cek dan rasain manfaatnya!"</p>
+            </div>
+            <div className='flex gap-[20px] '>
+              <img src="" alt="" className='bg-gray-300 w-[40px] h-[40px] rounded-full' />
+              <div className='informationReviewer flex flex-col'>
+                <a href="#" className='text-[12px] '>Jessice</a>
+                <a href="#" className='text-[12px] '>Mahasiswi Teknik, 2021</a>
+              </div>
+            </div>
           </div>
         </div>
+        <div className="w-[421.23px] h-[512.45px] left-[-100.45px] top-[-431.42px] absolute origin-top-left rotate-[37.21deg] opacity-10 rounded-full border-8 border-blue-950" />
       </div>
-      
-      {/* Right Section */}
-      <div className='w-2/5 bg-blue-400 flex justify-center items-center h-full rounded-l-[60px]'>
-        <div className='flex flex-col justify-center items-center'>
-          <h1 className='text-black text-3xl mb-4 text-[40px] font-bold '>Welcome Back !</h1>
-          <img src={ LogoOnly } alt="Illustration" className='w-[480px]' />
+      <div className='formIsi h-screen w-[50%] bg-white z-10'>
+        <div className=' ml-[30px] h-screen w-[100%] '>
+          <div>
+            <h1>Selamat datang kembali!</h1>
+            <p>Ingat Mahasiswa, Ingat JasTip MaMa.</p>
+          </div>
+          <div>
+            <div className="flex items-center gap-2">
+              <label htmlFor="username">Username:</label>
+              <input type="text" id="username" className="border border-gray-300 rounded-md p-2" />
+            </div>
+            <div className="flex items-center gap-2">
+              <label htmlFor="password">Kata Sandi:</label>
+              <input type="password" id="password" className="border border-gray-300 rounded-md p-2" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

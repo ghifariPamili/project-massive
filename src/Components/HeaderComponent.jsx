@@ -43,7 +43,8 @@ const HeaderComponent = () => {
             onClick={() => navigate('/login')}>
             Masuk
           </button>
-          <button className="px-4 py-2 rounded-[40px] w-[125px] bg-blue-950 text-white font-medium">
+          <button className="px-4 py-2 rounded-[40px] w-[125px] bg-blue-950 text-white font-medium"
+            onClick={() => navigate('/register')}>
             Daftar
           </button>
         </div>

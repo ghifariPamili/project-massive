@@ -1,8 +1,11 @@
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 import ilustasi2 from '../assets/ilustasi2.png';
 
 const Section1 = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="flex bg-teal-200 flex-row items-start justify-between gap-[10px] h-full text-white">
       <div className='rightDiv w-[50%] h-[100%] flex flex-col items-start justify-start'>
@@ -12,7 +15,8 @@ const Section1 = () => {
             <p className='text-blue-950 text-[24px] pr-[130px] leading-tight'>Kami akan membantumu untuk tetap cozy di tempatmu,<br />
               biar kami yang ini itu.</p>
           </div>
-          <button className='flex items-center gap-2 bg-blue-950 text-white px-8 py-[13px] rounded-full font-semibold'>
+          <button className='flex items-center gap-2 bg-blue-950 text-white px-8 py-[13px] rounded-full font-semibold'
+           onClick={() => navigate('/register')}>
             Get Started <div><FaArrowRight /></div>
           </button>
         </div>
