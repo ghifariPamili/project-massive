@@ -30,25 +30,25 @@ const LoginPage = () => {
         <div className="w-[421.23px] h-[512.45px] left-[-100.45px] top-[-431.42px] absolute origin-top-left rotate-[37.21deg] opacity-10 rounded-full border-8 border-blue-950" />
       </div>
       <div className='formIsi h-screen w-[50%] bg-white z-10'>
-        <div className=' ml-[30px] h-screen w-[100%] '>
-          <div>
-            <h1>Selamat datang kembali!</h1>
+        <div className=' ml-[30px] h-screen w-[100%] bg-red-500 flex flex-col items-start justify-center gap-[30px] '>
+          <div className='flex flex-col'>
+            <h1 className='text-[40px] font-bold'>Selamat datang kembali!</h1>
             <p>Ingat Mahasiswa, Ingat JasTip MaMa.</p>
           </div>
-          <div>
-            <div className="flex items-center gap-2">
+          <div className=''>
+            <div className="flex flex-col items-start gap-2">
               <label htmlFor="username">Username:</label>
-              <input type="text" id="username" className="border border-gray-300 rounded-md p-2" />
+              <input type="text" id="username" className="border border-gray-300 rounded-full p-2" />
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex flex-col items-start gap-2">
               <label htmlFor="password">Kata Sandi:</label>
-              <input type="password" id="password" className="border border-gray-300 rounded-md p-2" />
+              <input type="password" id="password" className="border border-gray-300 rounded-full p-2" />
             </div>
           </div>
+
         </div>
       </div>
     </div>
   );
 };
-
 export default LoginPage;
