@@ -7,7 +7,7 @@ const Section1 = () => {
   const navigate = useNavigate();
   
   return (
-    <div className="flex bg-teal-200 flex-row items-start justify-between gap-[10px] h-full text-white">
+    <div className="flex bg-customCyan flex-row items-start justify-between gap-[10px] h-full text-white">
       <div className='rightDiv w-[50%] h-[100%] flex flex-col items-start justify-start'>
         <div className='h-[85%] w-[100%] pl-[100px] flex flex-col items-start justify-center gap-[70px]'>
           <div className='flex flex-col gap-[14px]'>
