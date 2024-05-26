@@ -1,5 +1,6 @@
-import React from 'react';
-import Ilustrasi from '/home/user/project-massive/src/assets/ilustasi2.png';
+
+import Ilustrasi from 'C:/Project/latihanMsib/latihan-reactComponent/coba-tailwind/src/assets/ilustasi2.png';
+import { Link } from 'react-router-dom';
 
 const SectionSatu = ({ goToSection }) => {
   return (
@@ -33,7 +34,7 @@ const SectionSatu = ({ goToSection }) => {
             <button onClick={goToSection} className='bg-colorSekunder w-[130px] h-[40px] rounded-full text-white'>Lanjut</button>
             <div className='flex flex-row gap-[5px]'>
               <p>Sudah punya akun?</p>
-              <a href="#" className='text-colorSekunder'>Masuk</a>
+              <Link to="/login" className='text-colorSekunder'>Masuk</Link>
             </div>
           </div>
         </div>
@@ -41,5 +42,4 @@ const SectionSatu = ({ goToSection }) => {
     </div>
   );
 };
-
 export default SectionSatu;

@@ -7,6 +7,7 @@ const RegisterPage = () => {
   const [currentSection, setCurrentSection] = useState(1);
 
   const goToSection = (section) => {
+    console.log(`Navigating to section ${section}`);
     setCurrentSection(section);
   };
 

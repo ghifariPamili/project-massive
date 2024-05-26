@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FiEye, FiEyeOff } from "react-icons/fi";
+import { Link } from 'react-router-dom'
 // import '../All.css';
 // import LogoOnly from '../assets/LogoOnly.png';
 
@@ -68,7 +69,7 @@ const LoginPage = () => {
             <button className='bg-colorSekunder w-[130px] h-[40px] rounded-full text-white'>Masuk</button>
             <div className='flex flex-row gap-[5px]'>
               <p>Belum punya akun?</p>
-              <a href="#" className='text-colorSekunder'>Buat akun</a>
+              <Link to="/Register" className='text-colorSekunder'>Buat akun</Link>
             </div>
           </div>
         </div>
