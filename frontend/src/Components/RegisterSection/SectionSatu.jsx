@@ -1,5 +1,5 @@
 
-import Ilustrasi from 'C:/Project/latihanMsib/latihan-reactComponent/coba-tailwind/src/assets/ilustasi2.png';
+import Ilustrasi from 'C:/Project/latihanMsib/latihan-reactComponent/coba-tailwind/frontend/src/assets/ilustasi2.png';
 import { Link } from 'react-router-dom';
 
 const SectionSatu = ({ goToSection }) => {
