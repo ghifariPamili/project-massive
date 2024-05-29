@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
-import Ilustrasi from 'C:/Project/latihanMsib/latihan-reactComponent/coba-tailwind/frontend/src/assets/ilustasi2.png';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Ilustrasi from 'C:/Project/latihanMsib/latihan-reactComponent/coba-tailwind/frontend/src/assets/ilustasi2.png';
 
-const SectionTiga = () => {
+const SectionTiga = ({ userData }) => {
   const [formData, setFormData] = useState({
-    Nim: '',
-    Email: '',
-    Password: '',
+    nim: '',
+    email: '',
+    password: '',
     confirm: '',
-    Setuju: false
+    setuju: false
   });
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -23,34 +25,36 @@ const SectionTiga = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (formData.Password !== formData.confirm) {
-      alert("Password and Confirm Password do not match!");
+
+    if (!formData.setuju) {
+      setError('Mohon setujui syarat dan ketentuan.');
       return;
     }
-    if (!formData.Setuju) {
-      alert("You must agree to the terms and conditions!");
+
+    if (formData.password !== formData.confirm) {
+      setError('Konfirmasi password tidak sesuai.');
       return;
     }
+
+    const registrationData = { ...userData, ...formData };
+    console.log('Registering user with data:', registrationData);
+
     try {
-      const response = await axios.post('http://localhost:5000/api/users/register', {
-        nim: formData.Nim,
-        email: formData.Email,
-        password: formData.Password
-      });
-      console.log(response.data);
-      navigate('/someOtherSection'); // Replace with the route you want to navigate to after registration
+      await axios.post('/api/register', registrationData);
+      setSuccess('Pendaftaran berhasil!');
+      navigate('/login');
     } catch (error) {
-      console.error(error);
+      setError('Pendaftaran gagal. Silakan coba lagi.');
     }
   };
 
   return (
     <div className='Container text-blue-950 font-semibold flex overflow-hidden font'>
-      <div className='Information h-screen w-[50%] bg-customCyan rounded-tr-[40px] '>
-        <div className='InfoContainer size-[100%] flex flex-col items-center justify-start pt-[40px] gap-[40px] '>
+      <div className='Information h-screen w-[50%] bg-customCyan rounded-tr-[40px]'>
+        <div className='InfoContainer size-[100%] flex flex-col items-center justify-start pt-[40px] gap-[40px]'>
           <div className='flex flex-col gap-[10px]'>
             <p className='text-[25px]'>Solusi Anti Mager buat Mahasiswa </p>
-            <nav className='flex justify-between shadow-lg '>
+            <nav className='flex justify-between shadow-lg'>
               <a href="#"><div className='bg-colorPrimer w-[120px] shadow-lg h-[5px] rounded-full'></div></a>
               <a href="#"><div className='bg-colorPrimer w-[120px] shadow-lg h-[5px] rounded-full'></div></a>
               <a href="#"><div className='bg-colorPrimer w-[120px] shadow-lg h-[5px] rounded-full'></div></a>
@@ -68,56 +72,29 @@ const SectionTiga = () => {
             <h1 className='text-[40px] font-bold'>Bergabunglah dengan kami</h1>
             <p>Ingat Mahasiswa, Ingat JasTip MaMa.</p>
           </div>
-          <div className='w-[100%] text-[13px] flex flex-col gap-[10px] '>
+          <div className='w-[100%] text-[13px] flex flex-col gap-[10px]'>
             <div className="flex flex-col items-start gap-2">
-              <label htmlFor="Nim">Nomor Induk Mahasiswa (NIM)</label>
-              <input
-                type="text"
-                id="Nim"
-                value={formData.Nim}
-                onChange={handleChange}
-                className="border border-blueGray300 bg-blueGray50 rounded-[9px] p-2 w-[100%] pl-[10px] pr-[10px]"
-              />
+              <label htmlFor="nim">NIM</label>
+              <input type="text" id="nim" value={formData.nim} onChange={handleChange} className="border border-blueGray300 bg-blueGray50 rounded-[9px] p-2 w-[100%] pl-[10px] pr-[10px]" />
             </div>
             <div className="flex flex-col items-start gap-2">
-              <label htmlFor="Email">Email Anda</label>
-              <input
-                type="email"
-                id="Email"
-                value={formData.Email}
-                onChange={handleChange}
-                className="border border-blueGray300 bg-blueGray50 rounded-[9px] p-2 w-[100%] pl-[10px] pr-[10px]"
-              />
+              <label htmlFor="email">Email</label>
+              <input type="email" id="email" value={formData.email} onChange={handleChange} className="border border-blueGray300 bg-blueGray50 rounded-[9px] p-2 w-[100%] pl-[10px] pr-[10px]" />
             </div>
             <div className="flex flex-col items-start gap-2">
-              <label htmlFor="Password">Kata Sandi</label>
-              <input
-                type="password"
-                id="Password"
-                value={formData.Password}
-                onChange={handleChange}
-                className="border border-blueGray300 bg-blueGray50 rounded-[9px] p-2 w-[100%] pl-[10px] pr-[10px]"
-              />
+              <label htmlFor="password">Password</label>
+              <input type="password" id="password" value={formData.password} onChange={handleChange} className="border border-blueGray300 bg-blueGray50 rounded-[9px] p-2 w-[100%] pl-[10px] pr-[10px]" />
             </div>
             <div className="flex flex-col items-start gap-2">
-              <label htmlFor="confirm">Konfirmasi Kata Sandi Anda</label>
-              <input
-                type="password"
-                id="confirm"
-                value={formData.confirm}
-                onChange={handleChange}
-                className="border border-blueGray300 bg-blueGray50 rounded-[9px] p-2 w-[100%] pl-[10px] pr-[10px]"
-              />
+              <label htmlFor="confirm">Konfirmasi Password</label>
+              <input type="password" id="confirm" value={formData.confirm} onChange={handleChange} className="border border-blueGray300 bg-blueGray50 rounded-[9px] p-2 w-[100%] pl-[10px] pr-[10px]" />
             </div>
-            <div className='flex gap-[10px]'>
-              <input
-                type="checkbox"
-                id='Setuju'
-                checked={formData.Setuju}
-                onChange={handleChange}
-              />
-              <label htmlFor="Setuju">Saya setuju dengan pernyataan dalam hal layanan dan kebijakan privasi kami</label>
+            <div className="flex items-center gap-2">
+              <input type="checkbox" id="setuju" checked={formData.setuju} onChange={handleChange} />
+              <label htmlFor="setuju">Saya setuju dengan syarat dan ketentuan yang berlaku</label>
             </div>
+            {error && <p className='text-red-500'>{error}</p>}
+            {success && <p className='text-green-500'>{success}</p>}
           </div>
           <div className='flex flex-col gap-[10px] w-[100%] justify-center items-center'>
             <button type='submit' className='bg-colorSekunder w-[130px] h-[40px] rounded-full text-[14px] font-normal text-white'>Daftar</button>

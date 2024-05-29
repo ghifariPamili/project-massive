@@ -5,17 +5,19 @@ import SectionTiga from '../Components/RegisterSection/SectionTiga';
 
 const RegisterPage = () => {
   const [currentSection, setCurrentSection] = useState(1);
+  const [userData, setUserData] = useState({});
 
-  const goToSection = (section) => {
+  const goToSection = (section, data = {}) => {
     console.log(`Navigating to section ${section}`);
+    setUserData(prevData => ({ ...prevData, ...data }));
     setCurrentSection(section);
   };
 
   return (
     <div>
       {currentSection === 1 && <SectionSatu goToSection={() => goToSection(2)} />}
-      {currentSection === 2 && <SectionDua goToSection={() => goToSection(3)} />}
-      {currentSection === 3 && <SectionTiga />}
+      {currentSection === 2 && <SectionDua goToSection={(data) => goToSection(3, data)} />}
+      {currentSection === 3 && <SectionTiga userData={userData} />}
     </div>
   );
 };

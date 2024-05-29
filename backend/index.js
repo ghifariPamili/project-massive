@@ -1,14 +1,19 @@
-import express from "express";
-import cors from "cors";
-import session from "express-session";
-import dotenv from "dotenv";
-import db from "./config/Database.js";
-import userRoutes from "./routes/UserRoutes.js";
+import express from 'express';
+import cors from 'cors';
+import session from 'express-session';
+import dotenv from 'dotenv';
+import db from './config/Database.js';
+import userRoutes from './routes/UserRoutes.js';
 
 dotenv.config();
 
 // Membuat instance aplikasi Express
 const app = express();
+
+// Mengecek koneksi ke database
+db.authenticate()
+    .then(() => console.log('Database tersambung...'))
+    .catch(err => console.log('Tidak dapat tersambung ke database:', err));
 
 // Menggunakan middleware session untuk manajemen sesi pengguna
 app.use(session({
@@ -20,10 +25,10 @@ app.use(session({
     }
 }));
 
-// Menggunakan middleware CORS untuk mengizinkan akses dari frontend di localhost:3000
+// Middleware untuk menangani CORS
 app.use(cors({
     credentials: true,
-    origin: 'http://localhost:3000'
+    origin: 'http://localhost:5000' // Mengizinkan akses dari frontend di localhost:3000
 }));
 
 // Middleware untuk parsing JSON dan data url-encoded dari request body
