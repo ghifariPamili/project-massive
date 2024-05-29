@@ -1,5 +1,5 @@
 
-// import Ilustrasi from 'C:/Project/latihanMsib/latihan-reactComponent/coba-tailwind/frontend/src/assets/ilustasi2.png';
+import Ilustrasi from './assetSection/ilustasi2.png';
 import { Link } from 'react-router-dom';
 
 const SectionSatu = ({ goToSection }) => {
@@ -16,7 +16,7 @@ const SectionSatu = ({ goToSection }) => {
             </nav>
           </div>
           <div className='ilustrasi'>
-            <img src="" alt="Ilustration" className=' w-[400px]' />
+            <img src={Ilustrasi} alt="Ilustration" className=' w-[400px]' />
           </div>
         </div>
         <div className="w-[421.23px] h-[512.45px] left-[-100.45px] top-[-431.42px] absolute origin-top-left rotate-[37.21deg] opacity-10 rounded-full border-8 border-blue-950" />
