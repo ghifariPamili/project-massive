@@ -44,7 +44,7 @@ const SectionTiga = ({ userData }) => {
       setSuccess('Pendaftaran berhasil!');
       navigate('/login');
     } catch (error) {
-      setError('Pendaftaran gagal. Silakan coba lagi.');
+      setError('Pendaftaran gagal. Silakan coba lagi.' + error);
     }
   };
 

@@ -2,12 +2,11 @@ import User from "../models/UserModel.js";
 import bcrypt from "bcrypt";
 
 // Fungsi untuk mendaftarkan pengguna baru
-export const registerUser = async (req, res) => {
-    const { username, password, email } = req.body;
+export const registrationData = async (req, res) => {
+    const { username, password, email, nim } = req.body;
     try {
-        // Hash password sebelum menyimpan ke database
         const hashedPassword = await bcrypt.hash(password, 10);
-        const newUser = await User.create({ username, password: hashedPassword, email });
+        const newUser = await UserModel.createUser({ username, password: hashedPassword, email, nim });
         res.status(201).json({ message: 'Pendaftaran berhasil', user: newUser });
     } catch (error) {
         console.error('Error saat pendaftaran:', error);
@@ -19,7 +18,7 @@ export const registerUser = async (req, res) => {
 export const loginUser = async (req, res) => {
     const { username, password } = req.body;
     try {
-        const user = await User.findOne({ where: { username } });
+        const user = await UserModel.getUserByEmail(username);
         if (!user) {
             return res.status(404).json({ message: 'Pengguna tidak ditemukan' });
         }

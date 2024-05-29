@@ -1,10 +1,10 @@
 import express from "express";
-import { registerUser, loginUser } from "../controllers/UserController.js";
+import { registrationData, loginUser } from "../controllers/UserController.js";
 
 const router = express.Router();
 
 // Endpoint untuk mendaftarkan pengguna
-router.post('/register', registerUser);
+router.post('/register', registrationData);
 
 // Endpoint untuk login pengguna
 router.post('/login', loginUser);
