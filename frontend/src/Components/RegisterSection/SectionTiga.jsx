@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import Ilustrasi from 'C:/Project/latihanMsib/latihan-reactComponent/coba-tailwind/frontend/src/assets/ilustasi2.png';
+// import Ilustrasi from 'C:/Project/latihanMsib/latihan-reactComponent/coba-tailwind/frontend/src/assets/ilustasi2.png';
 
 const SectionTiga = ({ userData }) => {
   const [formData, setFormData] = useState({
@@ -61,7 +61,7 @@ const SectionTiga = ({ userData }) => {
             </nav>
           </div>
           <div className='ilustrasi'>
-            <img src={Ilustrasi} alt="Ilustration" className=' w-[400px]' />
+            <img src="" alt="Ilustration" className=' w-[400px]' />
           </div>
         </div>
         <div className="w-[421.23px] h-[512.45px] left-[-100.45px] top-[-431.42px] absolute origin-top-left rotate-[37.21deg] opacity-10 rounded-full border-8 border-blue-950" />
