@@ -28,7 +28,8 @@ app.use(session({
 // Middleware untuk menangani CORS
 app.use(cors({
     credentials: true,
-    origin: 'http://localhost:5000' // Mengizinkan akses dari frontend di localhost:3000
+    origin: 'http://127.0.0.1:5173',// Mengizinkan akses dari frontend di localhost:3000
+    optionSuccessStatus:200 
 }));
 
 // Middleware untuk parsing JSON dan data url-encoded dari request body

@@ -40,12 +40,14 @@ const SectionTiga = ({ userData }) => {
     console.log('Registering user with data:', registrationData);
 
     try {
-      await axios.post('/api/register', registrationData);
+      await axios.post('http://localhost:5000/api/register', registrationData);
       setSuccess('Pendaftaran berhasil!');
       navigate('/login');
     } catch (error) {
       setError('Pendaftaran gagal. Silakan coba lagi.' + error);
+      console.log(error);
     }
+
   };
 
   return (

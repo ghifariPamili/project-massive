@@ -100,7 +100,7 @@ const LoginPage = () => {
             </div>
           </div>
           <div className='flex flex-col gap-[10px] w-[100%]'>
-            <button type="submit" className='bg-colorSekunder w-[130px] h-[40px] rounded-full text-white'>Masuk</button>
+            <button type="submit" className='bg-colorSekunder w-[130px] h-[40px] rounded-full text-white' onClick={() => navigate('/home')}>Masuk</button>
             <div className='flex flex-row gap-[5px]'>
               <p>Belum punya akun?</p>
               <Link to="/Register" className='text-colorSekunder'>Buat akun</Link>

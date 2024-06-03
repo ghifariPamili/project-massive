@@ -2,6 +2,9 @@ import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import ilustasi2 from '../assets/ilustasi2.png';
+import Sponsor1 from "../assets/LogoCelerates.png"
+import Sponsor2 from "../assets/LogoMsib.png"
+import Sponsor3 from "../assets/TheMavericsLogo.png"
 
 const Section1 = () => {
   const navigate = useNavigate();
@@ -23,9 +26,9 @@ const Section1 = () => {
         <div className='flex flex-col gap-[22px] justify-start items-start h-[15%] w-full px-[100px]'>
           <p className='text-[11px] text-blue-950 '>Bekerja Dengan yang terbaik</p>
           <div className='flex gap-[20px]'>
-            <img src="#" alt="sponsor1" className='w-[30px] h-[30px] bg-white' />
-            <img src="#" alt="sponsor2" className='w-[30px] h-[30px] bg-white' />
-            <img src="#" alt="sponsor3" className='w-[30px] h-[30px] bg-white' />
+            <a href="https://kampusmerdeka.kemdikbud.go.id/" className='size-full bg-white'><img src={Sponsor2} href="" alt="MSIB"  /></a>
+            <a href="#" className='size-full bg-white'><img src={Sponsor3} href="" alt="TheMavericks"  /></a>
+            <a href="https://celerates.co.id/" className='size-full'><img src={Sponsor1} alt="Celerates" className='' /></a>
           </div>
         </div>
       </div>

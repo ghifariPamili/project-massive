@@ -36,7 +36,8 @@ const HeaderComponent = () => {
               Layanan
           </button>
         </div>
-        <div className="logo text-2xl font-bold text-blue-950">jastipMama.</div>
+        <div className="logo text-2xl font-bold text-blue-950" 
+        onClick={() => handleNavigation('about')}>jastipMama.</div>
         <div className="nav-buttons flex space-x-6">
           <button 
             className="px-4 py-2 rounded-[40px] border-[3px] border-blue-950 w-[125px] bg-transparent text-blue-950 font-semibold"
