@@ -1,8 +1,8 @@
 // HomePage.js
 import React, { useState } from 'react';
 import SideMenu from '../Components/SideMenu';
-import PageDriver1 from '../PageDriver/PageDriver1';
-import PageUser1 from '../PagePenitip/PageUser1';
+import BerandaDriver from '../PageDriver/BerandaDriver';
+import BerandaUser from '../PagePenitip/BerandaUser';
 
 function HomePage() {
   const [currentPage, setCurrentPage] = useState('penitip');
@@ -17,7 +17,7 @@ function HomePage() {
         <SideMenu handleSwitchPage={handleSwitchPage} currentPage={currentPage} />
       </div>
       <div className='w-[100%]'>
-        {currentPage === 'driver' ? <PageDriver1 /> : <PageUser1 />}
+        {currentPage === 'driver' ? <BerandaDriver /> : <BerandaUser />}
       </div>
     </div>
   );
