@@ -6,9 +6,7 @@ TestingDriverPage
 function TestingHome() {
   return (
     <div>
-        <div>
-            
-        </div>
+        <TestingUserPage />
     </div>
   )
 }
