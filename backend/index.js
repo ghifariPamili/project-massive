@@ -26,11 +26,7 @@ app.use(session({
 }));
 
 // Middleware untuk menangani CORS
-app.use(cors({
-    credentials: true,
-    origin: 'http://127.0.0.1:5173',// Mengizinkan akses dari frontend di localhost:3000
-    optionSuccessStatus:200 
-}));
+app.use(cors());
 
 // Middleware untuk parsing JSON dan data url-encoded dari request body
 app.use(express.json());
