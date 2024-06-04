@@ -10,7 +10,7 @@ import ButtonSwitch from "./ButtonSwitch";
 
 function SideMenu({ handleSwitchPage, currentPage }) {
   return (
-    <div className="flex flex-col bg-blue-400 w-[200px] h-screen">
+    <div className="flex flex-col bg-colorSekunder w-[200px] h-screen">
       <div className="Logo bg-gray-300 w-full h-[80px] "></div>
       <div className="Menu bg-colorSekunder w-full h-[100%] ">
         <div className="">
@@ -56,7 +56,7 @@ function SideMenu({ handleSwitchPage, currentPage }) {
           </div>
         </div>
       </div>
-      <div className="w-full h-[60px] flex justify-start items-center ml-[20px] "> <ButtonSwitch onClick={handleSwitchPage} currentPage={currentPage} /> </div>
+      <div className="w-full h-[60px] flex justify-start items-center ml-[5px] "> <ButtonSwitch onClick={handleSwitchPage} currentPage={currentPage} /> </div>
     </div>
   );
 }

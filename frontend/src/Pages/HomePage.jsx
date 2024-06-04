@@ -2,14 +2,7 @@
 import React, { useState } from 'react';
 import SideMenu from '../Components/SideMenu';
 import BerandaDriver from '../PageDriver/BerandaDriver';
-import AktivitasDriver from '../PageDriver/AktivitasDriver'
-import RiwayatDriver from '../PageDriver/RiwayatDriver'
 import BerandaUser from '../PagePenitip/BerandaUser';
-import AktivitasPenitip from '../PagePenitip/AktivitasUser'
-import RiwayatPenitip from '../PagePenitip/RiwayatUser'
-import ProfileComponent from '../Components/ProfileComponent';
-import PengaduanComponent from '../Components/PengaduanComponent';
-
 
 function HomePage() {
   const [currentPage, setCurrentPage] = useState('penitip');
