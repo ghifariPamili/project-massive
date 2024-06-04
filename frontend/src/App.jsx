@@ -3,7 +3,8 @@ import LandingPage from "./Pages/LandingPage";
 import LoginPage from './Pages/LoginPage';
 import RegisterPage from './Pages/RegisterPage';
 import HomePage from './Pages/HomePage'
-import TestingHome from "./Pages/TestingHome";
+import BerandaUser from "./PagePenitip/BerandaUser";
+import BerandaDriver from "./PageDriver/BerandaDriver"
 
 
 export default function App() {
@@ -14,7 +15,9 @@ export default function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/home" element={<HomePage />} />
-        <Route path="/test" element={<TestingHome />} />
+        <Route path="/homeUser" element={<BerandaUser />} />
+        <Route path="/homeDriver" element={<BerandaDriver />} />
+
       </Routes>
     </div>
   );
