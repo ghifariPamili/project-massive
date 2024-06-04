@@ -30,8 +30,8 @@ const BerandaUser = () => {
 
   const getMenuClass = (menu) =>
     activeMenu === menu
-      ? "flex w-full justify-start items-center gap-[13px] rounded-r-[20px] p-[10px] cursor-pointer bg-colorPrimer"
-      : "flex w-full justify-start items-center gap-[13px] rounded-r-[20px] p-[10px] cursor-pointer hover:bg-blue-900";
+      ? "flex w-full justify-start items-center gap-[13px] rounded-r-[20px] py-[10px] cursor-pointer bg-colorPrimer"
+      : "flex w-full justify-start items-center gap-[13px] rounded-r-[20px] py-[10px] cursor-pointer hover:bg-blue-900";
 
   return (
     <div>
@@ -42,7 +42,7 @@ const BerandaUser = () => {
           </div>
           <div className="Menu bg-colorSekunder w-full h-[100%]">
             <div className="">
-              <div className="flex flex-col justify-center items-center mx-[0px] mt-[20px] gap-[10px] text-white">
+              <div className="flex flex-col justify-center items-center mr-[10px] mt-[20px] gap-[10px] text-white">
                 <div className="w-full border-b-[2px] h-[30px]">
                   <div className="flex justify-start items-center gap-[13px] w-full">
                     <div className="text-[24px]">
