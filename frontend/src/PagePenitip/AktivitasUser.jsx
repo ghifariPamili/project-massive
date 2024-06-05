@@ -2,9 +2,9 @@ import React from 'react';
 
 function AktivitasUser() {
   return (
-    <div className="min-h-screen bg-blue-100 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-cyan-50 flex flex-col items-center justify-center p-4">
       {/* Image */}
-      <img src="assets/ilustrasiaktivitas.png" alt="aktivitas" width="40" height="60"/>
+      <img src="src/assets/ilustrasiaktivitas.png" alt="aktivitas" width="40" height="60"/>
 
       {/* Text */}
       <p className="text-center text-gray-700 mb-4">

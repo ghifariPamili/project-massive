@@ -2,11 +2,11 @@ import React from 'react';
 
 function BerandaComptUser() {
   return (
-    <div className="min-h-screen bg-blue-100 p-4">
+    <div className="min-h-screen bg-cyan-50 p-4">
       {/* Header */}
       <header className="flex justify-between items-center mb-4">
-        <div className="bg-blue-200 w-1/2 h-32 rounded-lg"></div>
-        <div className="bg-blue-200 w-1/2 h-32 rounded-lg"></div>
+        <div className="bg-cyan-200 w-1/3 h-32 rounded-lg border-2 border-black"></div>
+        <div className="bg-cyan-200 w-1/3 h-32 rounded-lg border-2 border-black"></div>
       </header>
 
       {/* Categories */}

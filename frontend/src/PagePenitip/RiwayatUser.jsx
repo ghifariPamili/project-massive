@@ -2,7 +2,7 @@ import React from 'react';
 
 function RiwayatUser() {
   return (
-    <div className="min-h-screen bg-blue-100 flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen bg-cyan-50 flex flex-col items-center justify-center p-4">
       {/* Image */}
       <img src="path/to/your/image.png" alt="404 Page Not Found" className="w-40 h-40 mb-4" />
 
