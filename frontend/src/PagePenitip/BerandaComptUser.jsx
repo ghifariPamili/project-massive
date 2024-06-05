@@ -6,7 +6,7 @@ function BerandaComptUser() {
   return (
     <div className="min-h-screen bg-cyan-50 p-4">
       {/* Header */}
-      <header className="flex justify-between items-center mb-4">
+      <header className="flex justify-center gap-[50px] items-center mb-4">
         <div className="bg-cyan-200 w-1/3 h-32 rounded-lg border-2 border-black"></div>
         <div className="bg-cyan-200 w-1/3 h-32 rounded-lg border-2 border-black"></div>
       </header>
