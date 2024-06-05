@@ -25,7 +25,7 @@ function BerandaComptUser() {
       </div>
 
       {/* Jastip List */}
-      <div className="bg-blue-200 p-4 rounded-lg">
+      <div className="bg-cyan-200 p-4 rounded-lg">
         <h2 className="text-lg mb-4">Jastip yang lagi ada ..</h2>
         <div className="flex items-center">
           <button className="p-2 mr-4">&lt;</button>
