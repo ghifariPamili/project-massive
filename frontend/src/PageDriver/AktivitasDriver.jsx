@@ -35,11 +35,22 @@ function AktivitasDriver() {
                 </div>
               </div>
             </div>
-            <div className='map'>
-
+            <div className='map bg-black rounded-[20px] h-[200px] m-[20px]'>
+              <div className='Product'>
+                <div className='mark bg-colorCyan h- w-[10px] '>i</div>
+              </div>
+              <div className='Mapping'></div>
             </div>
-            <div className='list'>
-
+            <div className='list bg-black rounded-[20px] h-[200px] m-[20px]'>
+              <div>
+                <div className='flex flex-row'>
+                  <div></div>
+                  <div></div>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
             </div>
           </div>
           <div className='IsiKanan gap-[10px] flex flex-col justify-start items-center px-[20px] w-[30%]'>
