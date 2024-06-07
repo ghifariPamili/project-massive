@@ -36,7 +36,7 @@ function FooterComponent() {
           <div>
             <h3 className="text-lg font-bold mb-4">Install App</h3>
             <div className="flex flex-col space-y-2">
-              <img src="src/assets/App Store.png" alt="" />
+              <img src="src/assets/App Store.png" alt=""  />
               <img src="src/assets/PlayStore.png" alt="" />
             </div>
           </div>
