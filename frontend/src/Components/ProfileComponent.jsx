@@ -3,7 +3,7 @@ import React from 'react'
 function ProfileComponent() {
   return (
     <div className="min-h-screen bg-cyan-50 p-4">
-    <div className="bg-white p-8 rounded-r-lg shadow-md flex-1 border-2 border-black rounded-lg m-2">
+    <div className="w-1/4 bg-white p-4 rounded-lg shadow-md">
     <div className="flex flex-col items-center">
       <div className="relative">
         <img
@@ -31,7 +31,7 @@ function ProfileComponent() {
     </nav>
   </div>
 
-  <div className="bg-white p-8 rounded-r-lg shadow-md flex-1 border-2 border-black rounded-lg m-2">
+  <div className="w-3/4 p-8 bg-white p-4 rounded-lg shadow-md">
       <div className="flex justify-between items-center">
         <h2 className="text-xl font-semibold">Informasi Pribadi</h2>
         <button className="text-blue-500">
