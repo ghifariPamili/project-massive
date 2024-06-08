@@ -2,9 +2,9 @@ import React from 'react'
 
 function MainProfile() {
   return (
-    <div>MainProfile
+    <div>
         {/* Main Content */}
-      {/* <main className="w-3/4 p-8">
+      <main className="w-3/4 p-8">
         <h1 className="text-2xl font-semibold mb-4">Informasi Pribadi</h1>
         <form className="bg-white p-6 rounded-lg shadow-md space-y-4">
           <div className="flex space-x-4">
@@ -106,7 +106,7 @@ function MainProfile() {
             </div>
           </div>
         </form>
-      </main> */}
+      </main>
     </div>
   )
 }
