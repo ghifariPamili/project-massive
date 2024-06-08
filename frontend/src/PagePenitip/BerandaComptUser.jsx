@@ -6,9 +6,14 @@ function BerandaComptUser() {
   return (
     <div className="min-h-screen bg-cyan-50 p-4">
       {/* Header */}
-      <header className="flex justify-center gap-[80px] items-center mb-4">
-        <div className="bg-cyan-200 w-1/3 h-32 rounded-lg border-2 border-black"></div>
-        <div className="bg-cyan-200 w-1/3 h-32 rounded-lg border-2 border-black"></div>
+      <header className="flex justify-center gap-[60px] items-center mb-4">
+        <div className="bg-cyan-200 w-2/3 h-32 rounded-lg border-2 border-black text-padding p-4">
+          <div className= "text-section">
+            <h1>MAGER?</h1><p>bukan masalah, kami hadir membantu anda</p>
+            <h2>Nitip mudah, murah dan terpercaya, yaa di Jastip MaMa</h2>
+            <p>Tunggu apalagi, yuk jastip sekarang di Jastip MaMa</p>
+          </div>
+        </div>
       </header>
 
       {/* Categories */}
