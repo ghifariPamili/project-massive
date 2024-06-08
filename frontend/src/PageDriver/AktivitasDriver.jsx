@@ -35,21 +35,35 @@ function AktivitasDriver() {
                 </div>
               </div>
             </div>
-            <div className='map bg-black rounded-[20px] h-[200px] m-[20px]'>
-              <div className='Product'>
-                <div className='mark bg-colorCyan h- w-[10px] '>i</div>
+            <div className='map bg-black rounded-[20px] flex flex-col gap-[10px]  h-[200px] m-[20px] p-[10px]'>
+              <div className='Product flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>
+                <div className='mark bg-red-500 h-[17px] w-[4px] rounded-[10px] '></div>
+                <div className='IsiList bg-gray-400 h-full w-full '></div>
               </div>
-              <div className='Mapping'></div>
+              <div className='Mapping bg-blue-500 h-full w-full'></div>
             </div>
-            <div className='list bg-black rounded-[20px] h-[200px] m-[20px]'>
+            <div className='list bg-black rounded-[20px] flex flex-col gap-[20px] h-[210px] m-[20px] p-[5px]'>
               <div>
-                <div className='flex flex-row'>
-                  <div></div>
-                  <div></div>
+                <div className='Product  flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>
+                  <div className='mark bg-red-500 h-[4px] w-[4px] rounded-[10px] '></div>
+                  <div className='IsiList bg-gray-400 h-full w-full '></div>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div className='Product  flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>
+                  <div className='mark bg-red-500 h-[4px] w-[4px] rounded-[10px] '></div>
+                  <div className='IsiList bg-gray-400 h-full w-full '></div>
+                </div>
+                <div className='Product  flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>
+                  <div className='mark bg-red-500 h-[4px] w-[4px] rounded-[10px] '></div>
+                  <div className='IsiList bg-gray-400 h-full w-full '></div>
+                </div>
+                <div className='Product  flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>
+                  <div className='mark bg-red-500 h-[4px] w-[4px] rounded-[10px] '></div>
+                  <div className='IsiList bg-gray-400 h-full w-full '></div>
+                </div>
+                <div className='Product  flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>
+                  <div className='mark bg-red-500 h-[4px] w-[4px] rounded-[10px] '></div>
+                  <div className='IsiList bg-gray-400 h-full w-full '></div>
+                </div>
               </div>
             </div>
           </div>
