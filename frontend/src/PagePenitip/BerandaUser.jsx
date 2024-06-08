@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 import AktivitasUser from './AktivitasUser';
 import BerandaCompUser from './BerandaComptUser';
 import RiwayatComponent from './RiwayatUser';
-import ProfileComponent from '../Components/ProfileComponent';
+import ProfileComponent from '../ProfileComponent/ProfileComponent';
 import PengaduanComponent from '../Components/PengaduanComponent';
 
 const BerandaUser = () => {
@@ -36,7 +36,7 @@ const BerandaUser = () => {
   return (
     <div>
       <div className="flex">
-        <div className="sideMenu w-[200px] flex jusify-between gap-0 flex-col h-screen bg-colorSekunder">
+        <div className="sideMenu w-[200px] flex jusify-between gap-0 flex-col h-[100vh] bg-colorSekunder">
           <div className="h-[70px] flex justify-start items-end font-[900] text-white">
             <div className="ml-[10px] mb-[10px] text-[20px]">JastipMama.</div>
           </div>

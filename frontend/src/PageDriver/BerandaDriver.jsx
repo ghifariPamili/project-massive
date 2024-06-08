@@ -11,7 +11,7 @@ import { useNavigate } from "react-router-dom";
 import AktivitasDriver from './AktivitasDriver';
 import BerandaCompDriver from './BerandaCompDriver';
 import RiwayatComponent from './RiwayatDriver';
-import ProfileComponent from '../Components/ProfileComponent';
+import ProfileComponent from '../ProfileComponent/ProfileComponent';
 import PengaduanComponent from '../Components/PengaduanComponent';
 
 const BerandaDriver = () => {
