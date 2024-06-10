@@ -68,7 +68,7 @@ function FeaturedServices() {
             </div>
           ))}
         </div>
-        <div className="w-1/2 text-center">
+        <div className="w-120 h-120 bg-white rounded-[20px] text-center">
           <p>Klik list jastip disamping untuk melihat detail jastip</p>
         </div>
       </div>
