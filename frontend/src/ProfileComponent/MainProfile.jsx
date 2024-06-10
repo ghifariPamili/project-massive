@@ -4,7 +4,7 @@ function MainProfile() {
   return (
     <div>
         {/* Main Content */}
-      <main className="w-3/4 p-8">
+      <main className="w-full p-8">
         <h1 className="text-2xl font-semibold mb-4">Informasi Pribadi</h1>
         <form className="bg-white p-6 rounded-lg shadow-md space-y-4">
           <div className="flex space-x-4">

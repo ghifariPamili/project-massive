@@ -5,13 +5,14 @@ import { IoLocationSharp } from "react-icons/io5";
 import { FiEdit3 } from "react-icons/fi";
 import { BiHistory } from "react-icons/bi";
 import IlustrasiDriver2 from '../assets/IlustrasiDriver2.png'
+import { ImSpoonKnife } from "react-icons/im";
 
 function AktivitasDriver() {
   return (
     <div className='flex justify-center items-center'>
        <div className='flex justify-center items-center w-full h-screen p-[25px]'>
         <div className='bg-white flex justify-center p-[20px]  w-full h-full rounded-[30px]'>
-          <div className='IsiKiri w-[70%] bg-red-500 px-[10px]'>
+          <div className='IsiKiri w-[70%]  px-[10px]'>
             <div className='Header flex flex-col gap-[20px]'>
               <div className='flex gap-[20px] justify-start items-center'>
                 <div className=' bg-white flex flex-row gap-[5px] justify-center items-center border-[1px] border-colorSekunder w-[400px] p-[6px] rounded-[20px]' >
@@ -35,34 +36,150 @@ function AktivitasDriver() {
                 </div>
               </div>
             </div>
-            <div className='map bg-black rounded-[20px] flex flex-col gap-[10px]  h-[200px] m-[20px] p-[10px]'>
+            <div className='map bg-basePrimary rounded-[20px] flex flex-col gap-[10px]  h-[200px] m-[20px] p-[10px]'>
               <div className='Product flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>
-                <div className='mark bg-red-500 h-[17px] w-[4px] rounded-[10px] '></div>
-                <div className='IsiList bg-gray-400 h-full w-full '></div>
+                <div className='mark bg-blue-400 h-[17px] w-[4px] rounded-[10px] '></div>
+                <div className='IsiList p-[5px] h-full w-full flex flex-row justify-between items-center text-[13px] font-semibold '>
+                  <div>
+                    <button className='bg-customCyan rounded-[8px] p-[4px]'>
+                    <ImSpoonKnife size={'20px'} />
+                    </button>
+                  </div>
+                  
+                    <div className="title">
+                      Gacoan Dinoyo
+                    </div>
+                    <div className="date text-gray-400">
+                      2024-05-21 - 18.00
+                    </div>
+                  
+                  <div>
+                    <button className="items bg-white  border-1 border-blue-300 rounded-[10px] p-[2px]">
+                      3 Km...Rp8k
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div className='Mapping bg-blue-500 h-full w-full'></div>
+              <div className='Mapping bg-blueGray300 h-full w-full flex justify-center items-center rounded-[20px]'>
+                Map
+              </div>
             </div>
-            <div className='list bg-black rounded-[20px] flex flex-col gap-[20px] h-[210px] m-[20px] p-[5px]'>
+            <div className='list bg-basePrimary rounded-[20px] flex flex-col gap-[20px] h-[210px] m-[20px] p-[5px]'>
               <div>
                 <div className='Product  flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>
-                  <div className='mark bg-red-500 h-[4px] w-[4px] rounded-[10px] '></div>
-                  <div className='IsiList bg-gray-400 h-full w-full '></div>
+                  <div className='mark bg-blue-400 h-[6px] w-[6px] rounded-[10px] '></div>
+                  <div className='IsiList p-[5px] h-full w-full flex flex-row justify-between items-center gap-[20px] text-[13px] font-semibold '>
+                  <div>
+                    <button className='bg-customCyan rounded-[8px] p-[4px]'>
+                    <ImSpoonKnife size={'20px'} />
+                    </button>
+                  </div>
+                  
+                    <div className="title">
+                      Gacoan Dinoyo
+                    </div>
+                    <div className="date text-gray-400">
+                      2024-05-21 - 18.00
+                    </div>
+                  
+                  <div>
+                    <button className="items bg-white  border-1 border-blue-300 rounded-[10px] p-[2px]">
+                      3 Km...Rp8k
+                    </button>
+                  </div>
+                </div>
                 </div>
                 <div className='Product  flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>
-                  <div className='mark bg-red-500 h-[4px] w-[4px] rounded-[10px] '></div>
-                  <div className='IsiList bg-gray-400 h-full w-full '></div>
+                  <div className='mark bg-blue-400 h-[6px] w-[6px] rounded-[10px] '></div>
+                  <div className='IsiList p-[5px] h-full w-full flex flex-row justify-between items-center gap-[20px] text-[13px] font-semibold '>
+                  <div>
+                    <button className='bg-customCyan rounded-[8px] p-[4px]'>
+                    <ImSpoonKnife size={'20px'} />
+                    </button>
+                  </div>
+                  
+                    <div className="title">
+                      Gacoan Dinoyo
+                    </div>
+                    <div className="date text-gray-400">
+                      2024-05-21 - 18.00
+                    </div>
+                  
+                  <div>
+                    <button className="items bg-white  border-1 border-blue-300 rounded-[10px] p-[2px]">
+                      3 Km...Rp8k
+                    </button>
+                  </div>
+                </div>
                 </div>
                 <div className='Product  flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>
-                  <div className='mark bg-red-500 h-[4px] w-[4px] rounded-[10px] '></div>
-                  <div className='IsiList bg-gray-400 h-full w-full '></div>
+                  <div className='mark bg-blue-400 h-[6px] w-[6px] rounded-[10px] '></div>
+                  <div className='IsiList p-[5px] h-full w-full flex flex-row justify-between items-center gap-[20px] text-[13px] font-semibold '>
+                  <div>
+                    <button className='bg-customCyan rounded-[8px] p-[4px]'>
+                    <ImSpoonKnife size={'20px'} />
+                    </button>
+                  </div>
+                  
+                    <div className="title">
+                      Gacoan Dinoyo
+                    </div>
+                    <div className="date text-gray-400">
+                      2024-05-21 - 18.00
+                    </div>
+                  
+                  <div>
+                    <button className="items bg-white  border-1 border-blue-300 rounded-[10px] p-[2px]">
+                      3 Km...Rp8k
+                    </button>
+                  </div>
+                </div>
                 </div>
                 <div className='Product  flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>
-                  <div className='mark bg-red-500 h-[4px] w-[4px] rounded-[10px] '></div>
-                  <div className='IsiList bg-gray-400 h-full w-full '></div>
+                  <div className='mark bg-blue-400 h-[6px] w-[6px] rounded-[10px] '></div>
+                  <div className='IsiList p-[5px] h-full w-full flex flex-row justify-between items-center gap-[20px] text-[13px] font-semibold '>
+                  <div>
+                    <button className='bg-customCyan rounded-[8px] p-[4px]'>
+                    <ImSpoonKnife size={'20px'} />
+                    </button>
+                  </div>
+                  
+                    <div className="title">
+                      Gacoan Dinoyo
+                    </div>
+                    <div className="date text-gray-400">
+                      2024-05-21 - 18.00
+                    </div>
+                  
+                  <div>
+                    <button className="items bg-white  border-1 border-blue-300 rounded-[10px] p-[2px]">
+                      3 Km...Rp8k
+                    </button>
+                  </div>
+                </div>
                 </div>
                 <div className='Product  flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>
-                  <div className='mark bg-red-500 h-[4px] w-[4px] rounded-[10px] '></div>
-                  <div className='IsiList bg-gray-400 h-full w-full '></div>
+                  <div className='mark bg-blue-400 h-[6px] w-[6px] rounded-[10px] '></div>
+                  <div className='IsiList p-[5px] h-full w-full flex flex-row justify-between items-center gap-[20px] text-[13px] font-semibold '>
+                  <div>
+                    <button className='bg-customCyan rounded-[8px] p-[4px]'>
+                    <ImSpoonKnife size={'20px'} />
+                    </button>
+                  </div>
+                  
+                    <div className="title">
+                      Gacoan Dinoyo
+                    </div>
+                    <div className="date text-gray-400">
+                      2024-05-21 - 18.00
+                    </div>
+                  
+                  <div>
+                    <button className="items bg-white  border-1 border-blue-300 rounded-[10px] p-[2px]">
+                      3 Km...Rp8k
+                    </button>
+                  </div>
+                </div>
                 </div>
               </div>
             </div>
