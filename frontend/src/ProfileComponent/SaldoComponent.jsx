@@ -22,7 +22,7 @@ function SaldoComponent() {
           biaya apapun.
         </p>
         <h3 className="text-lg font-bold mt-4">Metode Penambahan Alternatif</h3>
-        <ul className="mt-2">
+        {/* <ul className="mt-2">
           <li className="flex items-center mb-2">
             <span className="material-icons">account_balance_wallet</span>
             <span className="ml-2">ShopeePay</span>
@@ -35,7 +35,7 @@ function SaldoComponent() {
             <span className="material-icons">qr_code_scanner</span>
             <span className="ml-2">QRIS</span>
           </li>
-        </ul>
+        </ul> */}
         <div className="mt-4">
           {
             <div key="" className="mb-2 p-2 bg-gray-100 rounded-lg">

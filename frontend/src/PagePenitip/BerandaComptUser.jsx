@@ -4,52 +4,72 @@ import React from 'react';
 
 function BerandaComptUser() {
   return (
-    <div className="min-h-screen bg-cyan-50 p-4">
-      {/* Header */}
-      <header className="flex justify-center gap-[60px] items-center mb-4">
-        <div className="bg-cyan-200 w-2/3 h-32 rounded-lg border-2 border-black text-padding p-4">
-          <div className= "text-section">
-            <h1>MAGER?</h1><p>bukan masalah, kami hadir membantu anda</p>
-            <h2>Nitip mudah, murah dan terpercaya, yaa di Jastip MaMa</h2>
-            <p>Tunggu apalagi, yuk jastip sekarang di Jastip MaMa</p>
-          </div>
-        </div>
-      </header>
+    <div className="bg-blue-50 min-h-screen p-6">
+      <Header />
+      <CategoryIcons />
+      <FeaturedServices />
+    </div>
+  );
+}
 
-      {/* Categories */}
-      <div className="flex justify-around mb-4">
-        {['Makanan', 'ATK', 'Laundry', 'Obat', 'Skincare', 'etc'].map((category, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-2 shadow-md">
-              {/* Replace with actual icons */}
-              <span className="text-lg">{category[0]}</span>
-            </div>
-            <span className="text-sm">{category}</span>
-          </div>
-        ))}
+function Header() {
+  return (
+    <div className="bg-cyan-100 p-6 rounded-lg shadow-md text-center mb-6">
+      <h1 className="text-2xl font-bold">Mager?</h1>
+      <p>bukan masalahah, kami hadir membantu anda</p>
+      <p className="mt-4 text-lg">Nitip mudah, murah dan terpercaya, yaa di Jastip MaMa</p>
+      <p className="mt-2">Tunggu apalagi, yuk jastip sekarang di Jastip MaMa</p>
+      <div className="mt-4 flex justify-center src/assets/">
+        <img src="src/assets/rocket.png" alt="Illustration" className="w-16 h-16 mr-4"/>
+        <img src="src/assets/jastip.png" alt="Clipboard" className="w-16 h-16"/>
       </div>
+    </div>
+  );
+}
 
-      {/* Jastip List */}
-      <div className="bg-cyan-200 p-4 rounded-lg">
-        <h2 className="text-lg mb-4">Jastip yang lagi ada ..</h2>
-        <div className="flex items-center">
-          <button className="p-2 mr-4">&lt;</button>
-          <div className="flex flex-col items-start">
-            {[
-              { name: 'Ayam Geprek', price: 'Rp 3.000' },
-              { name: 'Mie Gacoan', price: 'Rp 3.000' },
-              { name: 'Cemilan', price: 'Rp 2.500' },
-            ].map((item, index) => (
-              <div key={index} className="flex items-center mb-2 p-2 bg-#90E0EF rounded-full shadow-md w-64 justify-between">
-                <span>{item.name}</span>
-                <span>{item.price}</span>
-              </div>
-            ))}
-          </div>
-          <button className="p-2 ml-4">&gt;</button>
+function CategoryIcons() {
+  const categories = [
+    { name: 'Makanan', icon: 'src/assets/gambarfood.png' },
+    { name: 'ATK', icon: 'src/assets/atk.png' },
+    { name: 'Laundry', icon: 'src/assets/laundry.png' },
+    { name: 'Obat', icon: 'src/assets/obat.png' },
+    { name: 'Skincare', icon: 'src/assets/skincare.png' },
+    { name: 'etc', icon: 'src/assets/etc.png' }
+  ];
+
+  return (
+    <div className="flex justify-around mb-6">
+      {categories.map((category, index) => (
+        <div key={index} className="flex flex-col items-center">
+          <img src={category.icon} alt={category.name} className="w-12 h-12 mb-2 rounded-full"/>
+          <p>{category.name}</p>
         </div>
-        <div className="bg-white p-4 mt-4 rounded-lg shadow-md w-full text-center">
-          Klik list jastip disamping untuk melihat detail jastip
+      ))}
+    </div>
+  );
+}
+
+function FeaturedServices() {
+  const services = [
+    { name: 'Ayam Geprek', price: 'Rp 3,000' },
+    { name: 'Mie Gacoan', price: 'Rp 3,200' },
+    { name: 'Cemilan', price: 'Rp 2,500' }
+  ];
+
+  return (
+    <div className="bg-cyan-100 p-6 rounded-lg shadow-md">
+      <h2 className="text-xl font-semibold mb-4">Jastip yang lagi ada ..</h2>
+      <div className="flex justify-between items-center">
+        <div className="w-1/2">
+          {services.map((service, index) => (
+            <div key={index} className="flex justify-between mb-2">
+              <p>{service.name}</p>
+              <p>{service.price}</p>
+            </div>
+          ))}
+        </div>
+        <div className="w-1/2 text-center">
+          <p>Klik list jastip disamping untuk melihat detail jastip</p>
         </div>
       </div>
     </div>
