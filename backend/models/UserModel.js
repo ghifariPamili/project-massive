@@ -1,32 +1,53 @@
-import db from '../config/Database.js';
+import { Sequelize } from "sequelize";
+import db from "../config/Database.js";
 
-const UserModel = {
-    createUser: (userData) => {
-        return new Promise((resolve, reject) => {
-            const columns = Object.keys(userData).join(', ');
-            const placeholders = Object.keys(userData).map(() => '?').join(', ');
-            const values = Object.values(userData);
+const { DataTypes } = Sequelize;
 
-            const sql = `INSERT INTO pengguna (${columns}) VALUES (${placeholders})`;
-
-            db.query(sql, values, (err, result) => {
-                if (err) {
-                    return reject(err);
-                }
-                resolve({ insertId: result.insertId });
-            });
-        });
+const Users = db.define('users', {
+   uid: {
+    type : DataTypes.INTEGER,
+    autoIncrement : true,
+    allowNull : false,
+    primaryKey :true
+   },
+    username: {
+        type: DataTypes.STRING,
+        allowNull: false
     },
-    getUserByEmail: (email) => {
-        return new Promise((resolve, reject) => {
-            const sql = 'SELECT * FROM users WHERE email = ?';
-            db.query(sql, [email], (err, result) => {
-                if (err) {
-                    return reject(err);
-                }
-                resolve(result[0]);
-            });
-        });
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    university: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    fullName: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    program: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    semester: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    whatsappNumber: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    nim: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
+    email: {
+        type: DataTypes.STRING,
+        allowNull: true
     }
-};
-export default UserModel;
+}, {
+    freezeTableName: true
+});
+
+export default Users;

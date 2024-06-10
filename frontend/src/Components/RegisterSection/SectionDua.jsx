@@ -111,4 +111,5 @@ const SectionDua = ({ goToSection }) => {
   );
 };
 
+
 export default SectionDua;

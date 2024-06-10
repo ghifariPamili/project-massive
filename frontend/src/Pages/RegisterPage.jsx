@@ -9,7 +9,8 @@ const RegisterPage = () => {
 
   const goToSection = (section, data = {}) => {
     console.log(`Navigating to section ${section}`);
-    setUserData(prevData => ({ ...prevData, ...data }));
+    const newData = { ...userData, ...data }; // Menggabungkan data dari SectionDua dengan userData
+    setUserData(newData);
     setCurrentSection(section);
   };
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Ilustrasi from './assetSection/ilustasi2.png';
@@ -40,7 +40,7 @@ const SectionTiga = ({ userData }) => {
     console.log('Registering user with data:', registrationData);
 
     try {
-      await axios.post('http://localhost:5000/api/register', registrationData);
+      await axios.post('http://localhost:5000/registration', registrationData);
       setSuccess('Pendaftaran berhasil!');
       navigate('/login');
     } catch (error) {

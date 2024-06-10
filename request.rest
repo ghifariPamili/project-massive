@@ -1,0 +1,16 @@
+# create user
+POST http://localhost:5000/registration
+Content-Type: application/json
+
+{
+    "username" :"Fiqri",
+    "password":"123456",
+    "university":"unisan",
+    "fullName":"Fiqriawan",
+    "program":"T informatika",
+    "semester":"6",
+    "whatsappNumber":"00000001021",
+    "nim":"T3121091",
+    "email":"fiqricode28@gmail.com"
+}
+
