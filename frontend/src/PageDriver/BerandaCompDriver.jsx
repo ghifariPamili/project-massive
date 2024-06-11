@@ -1,8 +1,11 @@
 import React from 'react'
 import { ImArrowUpRight2 } from "react-icons/im";
+import { useNavigate } from 'react-router-dom';
 import IllustrasiDriver from "../assets/IlustrasiDriver.png"
 
 function BerandaCompDriver() {
+  const navigate = useNavigate();
+
   return (
     <div className='w-full bg-colorBackground'>
       <div className='flex h-screen '>
@@ -30,7 +33,8 @@ function BerandaCompDriver() {
             </a>
           </div>
           <div>
-            <div className='bg-colorPrimer w-[110px] text-white h-[35px] flex justify-center items-center rounded-full font-semibold '>Buka Jastip</div>
+            <div className='bg-colorPrimer w-[110px] text-white h-[35px] flex justify-center items-center rounded-full font-semibold pointer'
+            onClick={() => navigate('/homeDriver/StartingJastip')}>Buka Jastip</div>
           </div>
         </div>
       </div>

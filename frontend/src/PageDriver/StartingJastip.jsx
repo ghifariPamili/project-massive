@@ -9,16 +9,17 @@ import { useNavigate } from "react-router-dom";
 
 // Import your components
 import AktivitasDriver from './AktivitasDriver';
-import BerandaCompDriver from './BerandaCompDriver';
+// import BerandaCompDriver from './BerandaCompDriver';
 import RiwayatComponent from './RiwayatDriver';
 import ProfileComponent from '../ProfileComponent/ProfileComponent';
 import PengaduanComponent from '../Components/PengaduanComponent';
+import StartComponent from './StartComponent'
 
 
-const BerandaDriver = () => {
+const StartingJastip = () => {
   const navigate = useNavigate();
-  const [activeComponent, setActiveComponent] = useState(<BerandaCompDriver />);
-  const [activeMenu, setActiveMenu] = useState("Beranda");
+  const [activeComponent, setActiveComponent] = useState(<StartComponent />);
+  const [activeMenu, setActiveMenu] = useState("Mulai");
 
   const handlePenitipButtonClick = () => {
     navigate("/homeUser");
@@ -56,7 +57,7 @@ const BerandaDriver = () => {
                 </div>
                 <div
                   className={getMenuClass("Beranda")}
-                  onClick={() => handleMenuClick(<BerandaCompDriver />, "Beranda")}
+                  onClick={() => handleMenuClick(<StartComponent />, "Beranda")}
                 >
                   <div className="text-[22px]">
                     <RxDashboard />
@@ -123,4 +124,4 @@ const BerandaDriver = () => {
   );
 };
 
-export default BerandaDriver;
+export default StartingJastip;
