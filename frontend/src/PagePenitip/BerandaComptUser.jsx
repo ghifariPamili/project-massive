@@ -4,24 +4,24 @@ import React from 'react';
 
 function BerandaComptUser() {
   return (
-    <div className="min-h-screen bg-cyan-50 p-4">
-      {/* Header */}
-      <header className="flex justify-center gap-[80px] items-center mb-4">
-        <div className="bg-cyan-200 w-1/3 h-32 rounded-lg border-2 border-black"></div>
-        <div className="bg-cyan-200 w-1/3 h-32 rounded-lg border-2 border-black"></div>
-      </header>
+    <div className="bg-blue-50 min-h-screen p-6">
+      <Header />
+      <CategoryIcons />
+      <FeaturedServices />
+    </div>
+  );
+}
 
-      {/* Categories */}
-      <div className="flex justify-around mb-4">
-        {['Makanan', 'ATK', 'Laundry', 'Obat', 'Skincare', 'etc'].map((category, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center mb-2 shadow-md">
-              {/* Replace with actual icons */}
-              <span className="text-lg">{category[0]}</span>
-            </div>
-            <span className="text-sm">{category}</span>
-          </div>
-        ))}
+function Header() {
+  return (
+    <div className="bg-cyan-100 p-6 rounded-lg shadow-md text-center mb-6">
+      <h1 className="text-2xl font-bold">Mager?</h1>
+      <p>bukan masalahah, kami hadir membantu anda</p>
+      <p className="mt-4 text-lg">Nitip mudah, murah dan terpercaya, yaa di Jastip MaMa</p>
+      <p className="mt-2">Tunggu apalagi, yuk jastip sekarang di Jastip MaMa</p>
+      <div className="mt-4 flex justify-center src/assets/">
+        <img src="src/assets/rocket.png" alt="Illustration" className="w-16 h-16 mr-4"/>
+        <img src="src/assets/jastip.png" alt="Clipboard" className="w-16 h-16"/>
       </div>
     </div>
   );
