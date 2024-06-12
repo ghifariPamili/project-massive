@@ -1,8 +1,12 @@
 
 
 import React from 'react';
+import { useNavigate } from "react-router-dom";
+
+import PencarianMakanan from './Pencarian';
 
 function BerandaComptUser() {
+  const navigate = useNavigate();
   return (
     <div className="bg-blue-50 min-h-screen p-6">
       <Header />
@@ -19,9 +23,9 @@ function Header() {
       <p>bukan masalahah, kami hadir membantu anda</p>
       <p className="mt-4 text-lg">Nitip mudah, murah dan terpercaya, yaa di Jastip MaMa</p>
       <p className="mt-2">Tunggu apalagi, yuk jastip sekarang di Jastip MaMa</p>
-      <div className="mt-4 flex justify-center src/assets/">
-        <img src="src/assets/rocket.png" alt="Illustration" className="w-16 h-16 mr-4"/>
-        <img src="src/assets/jastip.png" alt="Clipboard" className="w-16 h-16"/>
+      <div className="mt-4 flex justify-between ">
+        <img src="src/assets/rocket.png" alt="Illustration" className="w-[200px] h-[160px] mr-4"/>
+        <img src="src/assets/jastip.png" alt="Clipboard" className="w-[200px] h-[160px]"/>
       </div>
     </div>
   );
@@ -41,7 +45,9 @@ function CategoryIcons() {
     <div className="flex justify-around mb-6">
       {categories.map((category, index) => (
         <div key={index} className="flex flex-col items-center">
-          <img src={category.icon} alt={category.name} className="w-12 h-12 mb-2 rounded-full"/>
+          <button className='' onClick={() => navigate('/homeUser/Pencarian')}>
+            <img src={category.icon} alt={category.name} className="w-12 h-12 mb-2 rounded-full"/>
+            </button>
           <p>{category.name}</p>
         </div>
       ))}
@@ -68,7 +74,7 @@ function FeaturedServices() {
             </div>
           ))}
         </div>
-        <div className="w-120 h-120 bg-white rounded-[20px] text-center">
+        <div className="w-[400px] h-[150px] bg-white rounded-[20px] text-center">
           <p>Klik list jastip disamping untuk melihat detail jastip</p>
         </div>
       </div>

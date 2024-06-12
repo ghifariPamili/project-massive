@@ -6,7 +6,6 @@ import HomePage from './Pages/HomePage'
 import BerandaUser from "./PagePenitip/BerandaUser";
 import BerandaDriver from "./PageDriver/BerandaDriver"
 import StartingJastip from "./PageDriver/StartingJastip"
-import InputNumber from "./PageDriver/InputNumber"
 
 
 export default function App() {
@@ -20,7 +19,7 @@ export default function App() {
         <Route path="/homeUser" element={<BerandaUser />} />
         <Route path="/homeDriver" element={<BerandaDriver />} />
         <Route path="/homeDriver/StartingJastip" element={<StartingJastip />} />
-        <Route path="/homeDriver/StartingJastip/inputNumber" element={<InputNumber />} />
+        <Route path="/homeDriver/StartingJastip/inputNumber" element={<StartingJastip />} />
         <Route path="/homeDriver/StartingJastip/InputJastip" element={<StartingJastip />} />
 
 
