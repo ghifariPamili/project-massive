@@ -3,6 +3,7 @@ import PasswordComponent from "./PasswordComponent";
 import SaldoComponent from "./SaldoComponent";
 import MainProfile from "./MainProfile";
 import { LuWallet } from "react-icons/lu";
+import { FaUserCircle } from "react-icons/fa";
 
 function ProfileComponent() {
   const [selectedComponent, setSelectedComponent] = useState("mainProfile");
@@ -22,12 +23,12 @@ function ProfileComponent() {
   return (
     <div className="h-screen bg-blue-50 flex flex-row">
       {/* Sidebar */}
-      <aside className="w-[300px] h-[400px] bg-white p-4 rounded-lg shadow-md">
+      <aside className="w-[300px] h-[400px] bg-white p-4 rounded-lg shadow-md ml-10">
         <div className="flex flex-col items-center">
           <img
             src="" // Replace with actual profile picture URL
-            alt="3"
-            className="w-24 bg-blue-100 h-24 rounded-full object-cover"
+            alt=""
+            className="w-24 bg-white-100 h-24 border-black border-[2px] shadow-md rounded-full object-cover"
           />
           <h2 className="mt-4 text-lg font-semibold">Hai </h2>
           <nav className="mt-8 text-[16px] w-full">
