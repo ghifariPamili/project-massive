@@ -7,7 +7,7 @@ function PasswordComponent() {
         <div className="w-full p-[10px]  text-[14px] gap-[1px] flex flex-col  justify-start  items-start bg-white rounded-lg shadow-md">
           <div>
           <h2 className="text-2xl font-bold">Masuk</h2>
-          <p className="mt-1">Gunakan akun Google kampusmu</p>
+          <p className="mt-1">Gunakan akun Google mu</p>
           </div>
           <form className="my-2 " onSubmit="">
             <div className="mb-3">

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PasswordComponent from "./PasswordComponent";
 import SaldoComponent from "./SaldoComponent";
 import MainProfile from "./MainProfile";
+import { LuWallet } from "react-icons/lu";
 
 function ProfileComponent() {
   const [selectedComponent, setSelectedComponent] = useState("mainProfile");
@@ -21,7 +22,7 @@ function ProfileComponent() {
   return (
     <div className="h-screen bg-blue-50 flex flex-row">
       {/* Sidebar */}
-      <aside className="w-1/4 bg-white p-4 rounded-lg shadow-md">
+      <aside className="w-[300px] h-[400px] bg-white p-4 rounded-lg shadow-md">
         <div className="flex flex-col items-center">
           <img
             src="" // Replace with actual profile picture URL
@@ -81,14 +82,7 @@ function ProfileComponent() {
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 11V7a5 5 0 00-10 0v4M12 14v7m5-5a2 2 0 11-4 0 2 2 0 014 0zm-7 0a2 2 0 11-4 0 2 2 0 014 0z"
-                  ></path>
-                </svg>
+                ><LuWallet /></svg>
                 <span className="text-[14px]">Biaya Admin</span>
               </li>
               <li className="flex items-center p-2 mt-4 hover:bg-blue-100 rounded cursor-pointer">

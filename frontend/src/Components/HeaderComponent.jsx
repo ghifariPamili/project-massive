@@ -16,22 +16,22 @@ const HeaderComponent = () => {
       <div className='flex items-center justify-between gap-[70px]'>
         <div className='flex space-x-2'>
           <button 
-            className="px-4 py-2 rounded text-blue-950 font-semibold hover:text-white bg-transparent"
+            className="px-4 py-2 rounded text-blue-950 font-semibold hover:bg-black hover:text-white bg-transparent"
             onClick={() => handleNavigation('heros')}>
               Beranda
           </button>
           <button 
-            className="px-4 py-2 rounded text-blue-950 font-semibold hover:text-white bg-transparent"
+            className="px-4 py-2 rounded text-blue-950 font-semibold hover:bg-black hover:text-white bg-transparent"
             onClick={() => handleNavigation('fitur')}>
               Fitur
           </button>
           <button 
-            className="px-4 py-2 rounded text-blue-950 font-semibold hover:text-white bg-transparent"
+            className="px-4 py-2 rounded text-blue-950 font-semibold hover:bg-black hover:text-white bg-transparent"
             onClick={() => handleNavigation('alur')}>
               Alur
           </button>
           <button 
-            className="px-4 py-2 rounded text-blue-950 font-semibold hover:text-white bg-transparent"
+            className="px-4 py-2 rounded text-blue-950 font-semibold hover:bg-black hover:text-white bg-transparent"
             onClick={() => handleNavigation('layanan')}>
               Layanan
           </button>
