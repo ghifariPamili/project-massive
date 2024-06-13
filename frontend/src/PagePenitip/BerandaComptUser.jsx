@@ -29,15 +29,22 @@ function BerandaComptUser() {
 
   return (
     <div className='Main w-full h-screen bg-cyan-50 p-[10px]'>
-      <div className='isi flex flex-col justify-between items-center gap-[10px] w-full h-full bg-cyan-50 p-[10px]' >
-        <div className="iklan w-full rounded-[20px] h-full bg-cyan-300">
-          <h1 className='text-[50px] font-bold text-center'>Mager?</h1>
-          <p className='text-2xl font-bold text-center flex justify-center item-center'>Nitip mudah, murah dan terpercaya, yaa di Jastip MaMa</p>
-          <p className='flex justify-center item-center'>Tunggu apalagi, yuk jastip sekarang di Jastip MaMa</p>
-          <div className='flex justify-between'>
-          <img src="./src/assets/rocket.png" alt="" />
-          <img src="./src/assets/jastip.png" alt="" />
-        </div>
+      <div className='isi flex flex-col justify-center items-center gap-[10px] w-full h-full bg-cyan-50 p-[10px]' >
+        <div className="iklan w-full flex p-[10px] gap-[20px] justify-between items-center  rounded-[20px] h-full bg-cyan-300">
+          <div>
+            <h1 className='text-[40px] font-bold text-center'>Mager?</h1>
+            <img src="./src/assets/rocket.png" alt="" className='w-[200px] h-[200px] ' />
+          </div>
+          <div className='w-full '>
+            <p className='text-[20px] font-bold text-center flex justify-start item-start'>bukan masalaah, kami hadir membantu anda</p>
+            <p className='text-[25px] font-bold text-center flex justify-start item-start'>Nitip mudah, murah dan terpercaya, yaa di Jastip MaMa</p>
+            
+            <div className=' w-full flex justify-start items-start'>
+            <p className='flex justify-start item-start'>Tunggu apalagi, yuk jastip sekarang di Jastip MaMa</p>
+            <img src="./src/assets/ArrowVector.png" alt="" className='' />
+            <img src="./src/assets/jastip.png" alt="" className='' />
+            </div>
+          </div>
         </div>
         <div className="kategori flex flex-row p-[10px] justify-start items-center gap-[30px] bg-transparent w-full h-[230px] ">
           <div className="kategori-items  ">
