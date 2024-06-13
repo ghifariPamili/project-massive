@@ -85,7 +85,7 @@ function FeaturedServices({ services }) {
       <div className="flex justify-between items-center">
         <div className="w-[300px]">
           {services.map((service, index) => (
-            <div key={index} className="bg-cyan-300 rounded-[20px] border-black border-[2px]  flex justify-between mb-2">
+            <div key={index} className="bg-cyan-300 rounded-[20px] border-black border-[2px] flex justify-between mb-2">
               <p>{service.name}</p>
               <p>{service.price}</p>
             </div>
