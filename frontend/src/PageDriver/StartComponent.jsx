@@ -5,8 +5,9 @@ function StartComponent() {
   const navigate = useNavigate();
   return (
     <div className='w-'>
-      <div className="className='bg-white p-6 rounded-lg shadow-md text-center mb-6">
-
+      <div className="w-[1200px] h-[400px] bg-white p-6 rounded-lg shadow-md text-center mt-2 ml-4 mb-6">
+        <div className='w-[1000px] bg-blue-100'>
+        </div>
       </div>
       <div className='bg-white p-6 rounded-lg shadow-md text-center mb-6'>
         <h1>Ayo bersiap-siap!</h1>
