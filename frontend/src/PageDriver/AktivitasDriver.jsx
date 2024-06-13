@@ -36,7 +36,7 @@ function AktivitasDriver() {
                 </div>
               </div>
             </div>
-            <div className='map bg-basePrimary rounded-[20px] flex flex-col gap-[10px]  h-[200px] m-[20px] p-[10px]'>
+            {/* <div className='map bg-basePrimary rounded-[20px] flex flex-col gap-[10px]  h-[200px] m-[20px] p-[10px]'>
               <div className='Product flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>
                 <div className='mark bg-blue-400 h-[17px] w-[4px] rounded-[10px] '></div>
                 <div className='IsiList p-[5px] h-full w-full flex flex-row justify-between items-center text-[13px] font-semibold '>
@@ -63,7 +63,7 @@ function AktivitasDriver() {
               <div className='Mapping bg-blueGray300 h-full w-full flex justify-center items-center rounded-[20px]'>
                 Map
               </div>
-            </div>
+            </div> */}
             <div className='list bg-basePrimary rounded-[20px] flex flex-col gap-[20px] h-[210px] m-[20px] p-[5px]'>
               <div>
                 <div className='Product  flex flex-row justify-start items-center gap-[10px] h-[40px] p-[5px]'>

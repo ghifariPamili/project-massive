@@ -5,9 +5,9 @@ function PengaduanComponent() {
     <div className="min-h-screen bg-blue-50 px-[40px] flex justify-center items-center">
       <form onSubmit="" className="bg-white p-6 rounded-lg shadow-md space-y-2">
         <h1 className="text-2xl font-extrabold mb-4">Formulir Pengaduan Penitip</h1>
-        <p className='text-[12px] '>Jika Anda mempunyai keluhan terhadap driver, silakan isi formulir keluhan driver di bawah ini. Anda dapat mengajukan pengaduan  menggunakan nomor transaksi jastip bersama driver yang telah dilakukan sebelumnya. Jika tidak ada nomor transaksi jastip yang tercatat, mohon berikan informasi pada pelat identitas driver (yaitu nomor pelat kendaraan driver dan nama driver). Anda dapat memberikan salinan tanda terima tarif jastip dengan driver jika tersedia melalui email, laman chat, atau bukti transaksi lainnya.
-          Semua pengaduan yang diterima oleh JasTip MaMa akan dirujuk ke afiliasi JasTip MaMa di masing-masing kampus mitra untuk ditindaklanjuti.
-          Untuk keadaan darurat, silakan hubungi 123 langsung. Silakan klik di sini untuk menemukan informasi kontak JasTip MaMa di masing-masing kampus mitra.</p>
+        <p className=' '>Jika Anda mempunyai keluhan terhadap driver, silakan isi formulir keluhan driver di bawah ini. Anda dapat mengajukan pengaduan  menggunakan nomor transaksi jastip bersama driver yang telah dilakukan sebelumnya. Jika tidak ada nomor transaksi jastip yang tercatat, mohon berikan informasi pada pelat identitas driver (yaitu nomor pelat kendaraan driver dan nama driver). Anda dapat memberikan salinan tanda terima tarif jastip dengan driver jika tersedia melalui email, laman chat, atau bukti transaksi lainnya.</p>
+          <p>Semua pengaduan yang diterima oleh JasTip MaMa akan dirujuk ke afiliasi JasTip MaMa di masing-masing kampus mitra untuk ditindaklanjuti.
+          Untuk keadaan darurat, silakan hubungi 123 langsung.</p> <p>Silakan klik di sini untuk menemukan informasi kontak JasTip MaMa di masing-masing kampus mitra.</p>
         <div className='flex flex-row gap-[10px]'>
           <div className='kiri w-[48%]'>
             <div className="mb-4">
