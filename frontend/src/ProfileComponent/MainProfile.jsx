@@ -22,7 +22,7 @@ function MainProfile() {
               <label className="block text-sm font-medium text-gray-700">Nama Depan</label>
               <input
                 type="text"
-                defaultValue=""
+                defaultValue="Muhammad"
                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 readOnly
               />
@@ -31,7 +31,7 @@ function MainProfile() {
               <label className="block text-sm font-medium text-gray-700">Nama Belakang</label>
               <input
                 type="text"
-                defaultValue=""
+                defaultValue="Ariefbhiyann"
                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 readOnly
               />
@@ -41,7 +41,7 @@ function MainProfile() {
               <div className="relative mt-1 rounded-md shadow-sm">
                 <input
                   type="email"
-                  defaultValue=""
+                  defaultValue="ariefbhiyan@gmail.com"
                   className="block w-full pr-10 border border-gray-300 rounded-md focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                   readOnly
                 />
@@ -54,7 +54,7 @@ function MainProfile() {
               <label className="block text-sm font-medium text-gray-700">Universitas</label>
               <input
                 type="text"
-                defaultValue=""
+                defaultValue="Universitas Brawijaya"
                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 readOnly
               />
@@ -63,7 +63,7 @@ function MainProfile() {
               <label className="block text-sm font-medium text-gray-700">Program Studi</label>
               <input
                 type="text"
-                defaultValue=""
+                defaultValue="Sistem Informasi"
                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 readOnly
               />
@@ -72,7 +72,7 @@ function MainProfile() {
               <label className="block text-sm font-medium text-gray-700">NIM</label>
               <input
                 type="text"
-                defaultValue=""
+                defaultValue="215150407111074"
                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 readOnly
               />
@@ -81,7 +81,7 @@ function MainProfile() {
               <label className="block text-sm font-medium text-gray-700">Semester</label>
               <input
                 type="text"
-                defaultValue=""
+                defaultValue="6"
                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 readOnly
               />
@@ -90,7 +90,7 @@ function MainProfile() {
               <label className="block text-sm font-medium text-gray-700">Angkatan</label>
               <input
                 type="text"
-                defaultValue=""
+                defaultValue="2021"
                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 readOnly
               />
@@ -99,7 +99,7 @@ function MainProfile() {
               <label className="block text-sm font-medium text-gray-700">No. Whatsapp</label>
               <input
                 type="text"
-                defaultValue=""
+                defaultValue="+62 858-0132-8110"
                 className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
                 readOnly
               />
