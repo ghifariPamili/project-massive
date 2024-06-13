@@ -6,6 +6,8 @@ import HomePage from './Pages/HomePage'
 import BerandaUser from "./PagePenitip/BerandaUser";
 import BerandaDriver from "./PageDriver/BerandaDriver"
 import StartingJastip from "./PageDriver/StartingJastip"
+import MakananPage from './CategoryPage/MakananPage'
+import AlatTulisPage from './CategoryPage/AlatTulisPage'
 
 
 export default function App() {
@@ -17,10 +19,13 @@ export default function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/homeUser" element={<BerandaUser />} />
+        <Route path="/homeUser/makanan" element={<MakananPage />} />
+        <Route path="/homeUser/ATk" element={<AlatTulisPage />} />
         <Route path="/homeDriver" element={<BerandaDriver />} />
         <Route path="/homeDriver/StartingJastip" element={<StartingJastip />} />
         <Route path="/homeDriver/StartingJastip/inputNumber" element={<StartingJastip />} />
         <Route path="/homeDriver/StartingJastip/InputJastip" element={<StartingJastip />} />
+        
 
 
       </Routes>
